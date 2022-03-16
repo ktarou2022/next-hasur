@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false,
   content: [],
   theme: {
-    extend: {},
+    extend: { opacity: ['disabled'] },
   },
   plugins: [],
 }
