@@ -3,8 +3,6 @@ import { todoVar } from '../cache'
 import { useReactiveVar } from '@apollo/client'
 import Link from 'next/link'
 
-console.log(todoVar);
-
 
 export function LocalStateA ()  {
   const [input, setInput] = useState('');
