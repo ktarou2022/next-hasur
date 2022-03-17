@@ -11,6 +11,7 @@
     "gen-types": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.10",
     "next": "^11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
