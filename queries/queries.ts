@@ -48,7 +48,7 @@ export const CREATE_USER = gql`
 `
 export const UPDATE_USER = gql`
   mutation UpdateUser($id: uuid!, $name: String) {
-    update_users_by_pk(pk_columns: {id: "$id"}, _set: {name: $name}) {
+    update_users_by_pk(pk_columns: {id: $id}, _set: {name: $name}) {
       id
       name
       created_at
