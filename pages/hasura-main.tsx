@@ -16,7 +16,9 @@ const GET_DOGS = gql`
 
 function FetchMain ()  {
   console.log(GET_USERS)
-  const { loading, error, data  } = useQuery(GET_USERS)
+  const { loading, error, data  } = useQuery(GET_USERS,{
+    fetchPolicy: 'network-only'
+  })
   if (error)
     return (
       <Layout title='Hasura fetchPolicy'>
@@ -27,7 +29,6 @@ function FetchMain ()  {
   return (
     <Layout title='Hasura fetchPolicy'>
       <p className='mb-6 font-bold'>Hasura main page</p>
-      {console.log(data)}
       {data?.users.map((user) => {
         return (
           <p className='my-1' key={user.id}>
