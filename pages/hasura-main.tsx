@@ -17,7 +17,10 @@ const GET_DOGS = gql`
 function FetchMain ()  {
   console.log(GET_USERS)
   const { loading, error, data  } = useQuery(GET_USERS,{
-    fetchPolicy: 'network-only'
+     //fetchPolicy: 'network-only',
+     fetchPolicy: 'cache-and-network',
+     //fetchPolicy: 'cache-first',
+     //fetchPolicy: 'no-cache',
   })
   if (error)
     return (
