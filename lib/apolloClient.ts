@@ -6,7 +6,7 @@ import {
 } from '@apollo/client'
 import 'cross-fetch/polyfill'
 
-process.env.NEXT_PUBLIC_HASURA_URL = 'https://basic-test-hasura.hasura.app/v1/graphql'
+// process.env.NEXT_PUBLIC_HASURA_URL = 'https://basic-test-hasura.hasura.app/v1/graphql'
 
 let apolloClient: ApolloClient<NormalizedCacheObject> | undefined;
 const createApolloClient = () => {
